@@ -33,9 +33,9 @@ namespace ProjetoContato.Api.Controllers
 
                 return Ok(results);
             }
-            catch (System.Exception)
+           catch (System.Exception ex)
             {
-                return BadRequest();
+                return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
@@ -70,9 +70,9 @@ namespace ProjetoContato.Api.Controllers
 
                 return Ok(results);
             }
-            catch (System.Exception)
+           catch (System.Exception ex)
             {
-                return BadRequest();
+                return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 

@@ -1,3 +1,5 @@
+using System;
+
 namespace ProjetoContato.Domain.Model
 {
     public class Contato
@@ -6,7 +8,7 @@ namespace ProjetoContato.Domain.Model
 
         public string Nome { get; set; }
 
-        public string DataNascimento { get; set; }
+        public DateTime? DataNascimento { get; set; }
 
         public string Sexo { get; set; }
 

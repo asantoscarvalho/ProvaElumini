@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProjetoContato.Repository.Migrations
 {
@@ -13,7 +14,7 @@ namespace ProjetoContato.Repository.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(nullable: true),
-                    DataNascimento = table.Column<string>(nullable: true),
+                    DataNascimento = table.Column<DateTime>(nullable: true),
                     Sexo = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

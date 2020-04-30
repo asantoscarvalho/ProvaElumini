@@ -4,5 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0"/>
+    <PackageReference Include="CoreCompat.System.ComponentModel.DataAnnotations" Version="4.2.3-r7"/>
   </ItemGroup>
 </Project>

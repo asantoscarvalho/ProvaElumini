@@ -25,7 +25,7 @@ namespace ProjetoContato.Test
         {
             Contato _contato = new Contato {
                 Nome = "Andre",
-                DataNascimento = "25/12/2016",
+                DataNascimento = Convert.ToDateTime("25/12/2016"),
                 Sexo = "M"
 
             };
